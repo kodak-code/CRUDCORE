@@ -79,7 +79,7 @@ namespace CRUDCORE.Datos
                     SqlCommand cmd = new SqlCommand("sp_guardar", conexion);
                     cmd.Parameters.AddWithValue("Nombre", ocontacto.Nombre);
                     cmd.Parameters.AddWithValue("Telefono", ocontacto.Telefono);
-                    cmd.Parameters.AddWithValue("Nombre", ocontacto.Nombre);
+                    cmd.Parameters.AddWithValue("Correo", ocontacto.Correo);
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.ExecuteNonQuery();
 
@@ -111,7 +111,7 @@ namespace CRUDCORE.Datos
                     cmd.Parameters.AddWithValue("IdContacto", ocontacto.IdContacto);
                     cmd.Parameters.AddWithValue("Nombre", ocontacto.Nombre);
                     cmd.Parameters.AddWithValue("Telefono", ocontacto.Telefono);
-                    cmd.Parameters.AddWithValue("Nombre", ocontacto.Nombre);
+                    cmd.Parameters.AddWithValue("Correo", ocontacto.Correo);
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.ExecuteNonQuery();
 
